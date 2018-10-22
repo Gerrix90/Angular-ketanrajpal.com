@@ -1,0 +1,9 @@
+<nav id="navigation" class="close">
+    <ul>
+        <li><a href="/" ng-class="getClass('/')"><span class="fas fa-home"></span></a></li>
+        <li ng-repeat="nav in navigation">
+            <a ng-class="getClass('{{nav.url}}')" href="{{nav.url}}"><span class="{{nav.icon}}"></span>{{nav.label}}</a>
+        </li>
+        <li ng-controller="ngNavController"><a href="#" ng-click="nav('close')"><span class="fas fa-times"></span></a></li>
+    </ul>
+</nav>

@@ -1,0 +1,54 @@
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <span class="fas fa-palette icon"></span>
+                <h1>{{name}}</h1>
+                <span class="fas fa-long-arrow-alt-right icon"></span>
+            </a>
+        </div>
+        <div class="title">
+            <ul>
+                <li ng-repeat="title in titles">
+                    <h2>{{title}}</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="mailto:{{email}}">
+                        <span class="fas fa-at"></span>
+                        {{email}}
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:{{phone}}">
+                        <span class="fas fa-phone"></span>
+                        {{phone}}
+                    </a>
+                </li>
+                <li ng-controller="ngNavController">
+                    <a href="#" ng-click="nav('open')">
+                        <span class="fas fa-bars"></span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ul class="contact">
+        <li>
+            <a href="mailto:{{email}}">
+                <span class="fas fa-at"></span>
+                {{email}}
+            </a>
+        </li>
+        <li>
+            <a href="tel:{{phone}}">
+                <span class="fas fa-phone"></span>
+                {{phone}}
+            </a>
+        </li>
+    </ul>
+</header>

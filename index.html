@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <base href="/">
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link href="./resources/css/default.css" rel="stylesheet" type="text/css">
+
+    <!-- apple configuration -->
+    <link rel="apple-touch-icon" sizes="152x152" href="./resources/icons/ketanrajpal-icon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/ketanrajpal-icon-180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./resources/icons/ketanrajpal-icon-167.png">
+    <link rel="apple-touch-startup-image" href="/launch.png">
+    <meta name="apple-mobile-web-app-title" content="Ketan Rajpal">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body ng-app="app">
+    <app-nav></app-nav>
+    <section>
+        <div class="header">
+            <app-header></app-header>
+        </div>
+
+        <div class="content">
+            <section ng-view></section>
+        </div>
+        <div class="footer">
+            <app-footer></app-footer>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+    <script src="./resources/app.js"></script>
+</body>
+
+</html>

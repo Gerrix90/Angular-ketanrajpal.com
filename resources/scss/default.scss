@@ -1,0 +1,21 @@
+@import "reset";
+@import "variables";
+
+body {
+  font-family: $font-family;
+  background-color: $background;
+}
+
+app-header {
+  @import "./components/header";
+}
+app-nav {
+  @import "./components/nav";
+}
+app-footer {
+  display: none;
+}
+
+div.content {
+  display: none;
+}

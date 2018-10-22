@@ -1,0 +1,36 @@
+{
+  "name": "Ketan Rajpal's Portfolio",
+  "short_name": "Ketan Rajpal",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./resources/icons/ketanrajpal-icon-128.png",
+      "sizes": "128X128",
+      "type": "image/png"
+    },
+    {
+      "src": "./resources/icons/ketanrajpal-icon-144.png",
+      "sizes": "144X144",
+      "type": "image/png"
+    },
+    {
+      "src": "./resources/icons/ketanrajpal-icon-152.png",
+      "sizes": "152X152",
+      "type": "image/png"
+    },
+    {
+      "src": "./resources/icons/ketanrajpal-icon-192.png",
+      "sizes": "192X192",
+      "type": "image/png"
+    },
+    {
+      "src": "./resources/icons/ketanrajpal-icon-256.png",
+      "sizes": "256X256",
+      "type": "image/png"
+    }
+  ]
+}
