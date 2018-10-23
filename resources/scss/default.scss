@@ -13,9 +13,14 @@ app-nav {
   @import "./components/nav";
 }
 app-footer {
-  display: none;
+  @import "./components/footer";
 }
 
-div.content {
-  display: none;
+section {
+  &.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+  }
 }
