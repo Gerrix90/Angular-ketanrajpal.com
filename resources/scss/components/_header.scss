@@ -249,6 +249,9 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         li {
+          &:first-child {
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+          }
           a {
             display: block;
             color: #ffffff;
@@ -321,6 +324,9 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         li {
+          &:first-child {
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+          }
           a {
             display: block;
             color: #ffffff;
