@@ -4,6 +4,8 @@
 body {
   font-family: $font-family;
   background-color: $background;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 @import "./components/header";
