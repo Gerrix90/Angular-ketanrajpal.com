@@ -5,7 +5,7 @@ angular
       templateUrl: "./resources/components/index.html",
       controller: function AppHomeController($scope) {
         $scope.h1 =
-          "Hello, I'm Ketan Rajpal, a passionate & versatile Full Stack Developer & Digital Designer(UI/UX) living in New Delhi, India";
+          "Hello, I'm Ketan Rajpal, a passionate & versatile Full Stack Developer & Digital Designer (UI/UX) living in New Delhi, India";
         $scope.h2 =
           "I am a passionate, successful, and multi-award winning Full Stack Developer with more than 8 years of multidisciplinary experience in Software and Web Application Development; Digital Design and Branding; IT Operations; and Digital Marketing.";
       }

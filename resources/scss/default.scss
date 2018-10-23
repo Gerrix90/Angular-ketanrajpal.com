@@ -6,15 +6,11 @@ body {
   background-color: $background;
 }
 
-app-header {
-  @import "./components/header";
-}
-app-nav {
-  @import "./components/nav";
-}
-app-footer {
-  @import "./components/footer";
-}
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";
+
+@import "./components/index";
 
 section {
   &.main-container {
@@ -22,5 +18,6 @@ section {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     height: 100%;
+    align-items: center;
   }
 }

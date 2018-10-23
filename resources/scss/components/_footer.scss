@@ -1,147 +1,149 @@
-footer {
-  background-color: #ffffff;
-  div {
-    &.container {
-      margin: auto;
-      display: grid;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 30px;
-      div {
-        &.social {
-          a {
-            display: inline-block;
-            height: 30px;
-            width: 30px;
-            text-align: center;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 13px;
-            &:last-child {
-              margin: 0;
-            }
-            transition: all ease 0.5s;
-            @each $social in $social_media {
-              $key: nth($social, 1);
-              $value: nth($social, 2);
-              &.#{$key} {
-                color: $value;
+app-footer {
+  footer {
+    background-color: #ffffff;
+    div {
+      &.container {
+        margin: auto;
+        display: grid;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        div {
+          &.social {
+            a {
+              display: inline-block;
+              height: 30px;
+              width: 30px;
+              text-align: center;
+              border-radius: 50%;
+              display: inline-block;
+              margin-right: 13px;
+              &:last-child {
+                margin: 0;
               }
-            }
-            &:hover {
-              color: #ffffff;
-              span {
-                animation: spinAround 1s linear infinite;
-              }
+              transition: all ease 0.5s;
               @each $social in $social_media {
                 $key: nth($social, 1);
                 $value: nth($social, 2);
                 &.#{$key} {
-                  background-color: $value;
+                  color: $value;
+                }
+              }
+              &:hover {
+                color: #ffffff;
+                span {
+                  animation: spinAround 1s linear infinite;
+                }
+                @each $social in $social_media {
+                  $key: nth($social, 1);
+                  $value: nth($social, 2);
+                  &.#{$key} {
+                    background-color: $value;
+                  }
                 }
               }
             }
           }
-        }
-        &.copyright {
-          a {
-            color: $primary;
-            margin-left: 13px;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 1280px) {
-    div {
-      &.container {
-        width: 90%;
-        padding: 10px 0;
-        grid-template-columns: 1fr 1fr;
-        div {
           &.copyright {
-            text-align: right;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 980px) and (max-width: 1279px) {
-    div {
-      &.container {
-        width: 90%;
-        padding: 10px 0;
-        grid-template-columns: 1fr 1fr;
-        div {
-          &.copyright {
-            text-align: right;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 736px) and (max-width: 979px) {
-    div {
-      &.container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        div {
-          padding: 10px 0;
-          &.social {
-            text-align: center;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-          &.copyright {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 480px) and (max-width: 735px) {
-    div {
-      &.container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        div {
-          padding: 10px 0;
-          &.social {
-            text-align: center;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-          &.copyright {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 479px) {
-    div {
-      &.container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        div {
-          &.social {
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(7, auto);
             a {
-              margin: 0;
-              display: block;
-              height: auto;
-              width: auto;
-              border-radius: 0;
-              padding: 5px 0;
+              color: $primary;
+              margin-left: 13px;
             }
           }
-          &.copyright {
-            display: none;
+        }
+      }
+    }
+
+    @media (min-width: 1280px) {
+      div {
+        &.container {
+          width: 90%;
+          padding: 10px 0;
+          grid-template-columns: 1fr 1fr;
+          div {
+            &.copyright {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 980px) and (max-width: 1279px) {
+      div {
+        &.container {
+          width: 90%;
+          padding: 10px 0;
+          grid-template-columns: 1fr 1fr;
+          div {
+            &.copyright {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 736px) and (max-width: 979px) {
+      div {
+        &.container {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          div {
+            padding: 10px 0;
+            &.social {
+              text-align: center;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            &.copyright {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 480px) and (max-width: 735px) {
+      div {
+        &.container {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          div {
+            padding: 10px 0;
+            &.social {
+              text-align: center;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            &.copyright {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 479px) {
+      div {
+        &.container {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          div {
+            &.social {
+              text-align: center;
+              display: grid;
+              grid-template-columns: repeat(7, auto);
+              a {
+                margin: 0;
+                display: block;
+                height: auto;
+                width: auto;
+                border-radius: 0;
+                padding: 5px 0;
+              }
+            }
+            &.copyright {
+              display: none;
+            }
           }
         }
       }
