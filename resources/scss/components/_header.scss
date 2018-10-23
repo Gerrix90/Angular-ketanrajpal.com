@@ -274,9 +274,9 @@ header {
   }
 
   @media (max-width: 479px) {
-    font-size: 13px !important;
     padding: 10px 0 0 0;
     div {
+      font-size: 13px;
       &.container {
         grid-template-columns: auto auto 1fr;
         div {
@@ -319,6 +319,7 @@ header {
     }
     ul {
       &.contact {
+        font-size: 13px !important;
         background-color: $primary;
         margin-top: 10px;
         display: grid;
